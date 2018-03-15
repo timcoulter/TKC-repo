@@ -1,21 +1,22 @@
 def main():
     score = get_score()
-    if score in range(0,101):
-        if score >= 90:
-            print("Excellent")
-        elif score >= 50:
-                print("Passable")
-        elif score < 50:
-            print("Bad")
+    if score not in range(0, 101):
+        print("Invalid")
+    elif score >= 90:
+        print("Excellent")
+    elif score >= 50:
+        print("Passable")
     else:
-        print("Invalid score")
+        print("Bad")
+
 def get_score():
     while True:
         try:
-            score = float(input("Enter your score here: "))
+            score = int(input("Enter an integer score between 0 and 100 here: "))
             break
         except ValueError:
-            print("Score must equal a number between 0 and 100")
-            score = float(input("Enter your score here: "))
+            score = int(input("Enter an integer score between 0 and 100 here: "))
     return score
+
 main()
+
