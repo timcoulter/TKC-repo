@@ -6,8 +6,11 @@ def main():
     S.join(' ')
     words = list()
     nonalpha_index = [index for index, char in enumerate(S, 0) if not char.isalpha()]
-    nonalpha_index.insert(0, 0)
-    for num in range(len(nonalpha_index) - 1):
+    nonalpha_index.append(len(S))
+    nonalpha_index.insert(0,0)
+    print(len(S))
+    print(nonalpha_index)
+    for num in range(len(nonalpha_index)- 1):
         if nonalpha_index[num] + 1 == nonalpha_index[num + 1]:
             continue
         else:
