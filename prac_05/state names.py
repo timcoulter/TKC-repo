@@ -11,12 +11,11 @@ for key in STATE_NAMES:
     print('{0} is {1}'.format(str(key) + (3 - len(key))* ' ', STATE_NAMES[key]))
 
 # print(STATE_NAMES)
-
-state = input("Enter short state: ").upper()
+state = input("Enter nothing to quit\nEnter short state: ").upper()
 while state != "":
     if state in STATE_NAMES:
         print(state, "is", STATE_NAMES[state])
     else:
         print("Invalid short state")
     state = input("Enter short state: ")
-
+print('Have a nice day')
