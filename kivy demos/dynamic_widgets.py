@@ -58,7 +58,7 @@ class DynamicWidgetsApp(App):
         # update status text
         self.status_text = "{}'s number is {}".format(name, self.phonebook[name])
 
-    def clear_all(self):
+    def clear_movies(self):
         """
         Clear all of the widgets that are children of the "entries_box" layout widget
         :return:

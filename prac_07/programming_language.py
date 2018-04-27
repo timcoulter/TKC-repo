@@ -1,4 +1,3 @@
-import inspect
 
 class ProgrammingLanguage:
     def __init__(self, name=None, typing=None, reflection=None, year=None):
@@ -13,3 +12,12 @@ class ProgrammingLanguage:
             return True
         else:
             return False
+
+languages = [ProgrammingLanguage("Ruby", "Dynamic", True, 1995),
+             ProgrammingLanguage("Python", "Dynamic", True, 1991),
+             ProgrammingLanguage("Visual Basic", "Static", False, 1991)]
+print('The dynamically typed languages are:')
+for i in languages:
+    if i.is_dynamic():
+        print(i.data[0])
+
