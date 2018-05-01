@@ -20,6 +20,6 @@ class Unreliable_car(Car):
         return distance_driven
 
 
-dodgy_car = Unreliable_car('Ford ute', 120, 40)
+dodgy_car = Unreliable_car('Ford ute', 120, 50)
 dodgy_car.drive(40)
 print(dodgy_car)

@@ -35,4 +35,4 @@ def main():
     print(my_taxi)
     print('Current fare is ${0}0.'.format(my_taxi.get_fare()))
 
-main()
+#main()
