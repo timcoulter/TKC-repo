@@ -22,4 +22,4 @@ def main():
     guitar2 = Guitar('Another Guitar', 2013, 2000)
     print(guitar2)
     print(guitar2.is_vintage())
-#main()
+main()
