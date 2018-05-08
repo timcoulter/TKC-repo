@@ -24,7 +24,7 @@ def sort_folders():
             if user_input not in categories:
                 print('{0} must be sorted into one of the following:\n\tDocs, Images, Spreadsheets'.
                       format(subfile.split('.')[1]))
-
+        shutil.copy(subfile, user_input)
 
 sort_folders()
 

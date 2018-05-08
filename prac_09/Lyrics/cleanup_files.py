@@ -9,9 +9,6 @@ import os
 def main():
     """Demo file renaming with the os module."""
     print("Current directory is", os.getcwd())
-    os.chdir('Lyrics')
-    print(os.listdir('.'))
-
     for filename in os.listdir('.'):
         if filename == 'cleanup_files.py' or filename == 'temp':
            continue
