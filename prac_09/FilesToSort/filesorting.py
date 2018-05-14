@@ -27,11 +27,3 @@ def sort_folders():
         shutil.copy(subfile, user_input)
 
 sort_folders()
-
-"""user_input = ''
-while user_input not in categories:
-    user_input = input('What catergory would you like to sort {0} files into? '.format(ext)).strip().lower()
-    user_input = user_input.title()
-    if user_input not in categories:
-        print('{0} must be sorted into one of the following:\n\tDocs, Images, Spreadsheets'.format(ext))"""
-

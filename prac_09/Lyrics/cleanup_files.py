@@ -15,8 +15,10 @@ def main():
         else:
             print('Files in the directory >>> {0}'.format(filename))
             for subfiles in os.listdir(filename):
-                subfiles = get_fixed_filename(subfiles)
-                print(subfiles)
+                subfile_location = os.getcwd() + '/' + filename + '/' + subfiles
+                if os.path.exists(subfile_location):
+                    shutil.move(subfile_location, os.getcwd() + '/' + filename + '/' + get_fixed_filename(subfiles))
+
 
 def get_fixed_filename(filename):
     new_name = ""
