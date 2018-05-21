@@ -1,6 +1,7 @@
 import wikipedia
 
 def get_wiki():
+    "Search for a wikipedia page."
     user_input = 'blank'
     while input != '':
         try:
